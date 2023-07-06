@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Contact Us | HungryTortoise </title>
+    <link rel="stylesheet" href="./css/contact.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="address"><a href="https://www.google.com/maps/place/490,+92nd+Cross+Rd,+1st+Stage,+Kumaraswamy+Layout,+Bengaluru,+Karnataka+560078/@12.9063381,77.5635153,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae1563a61551d7:0xd5bf1ab7a6054cea!8m2!3d12.906332!4d77.565704" style="text-decoration: none; color: black;" target="_blank" rel="noopener noreferrer">Address</a></div>
+          <div class="text-one">490, 92nd Cross Rd</div>
+          <div class="text-two">Kumaraswamy Layout</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one"><a href="tel:+919794697791" style="text-decoration: none; color: black;" >+91 9794697791</a></div>
+          <div class="text-two"><a href="tel:+918573983185" style="text-decoration: none; color: black;" >+91 8573983185</a></div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one"><a href="mailto:kashyapaman23@gmail.com" style="text-decoration: none; color: black;" >kashyapaman23@gmail.com</a></div>
+          <div class="text-two"><a href="mailto:divyansh11v@gmail.com" style="text-decoration: none; color: black;" >divyansh11v@gmail.com</a></div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p>If you have any suggestions or complaint regarding our work, feel free to share with us:</p>
+      <form action="#">
+        <div class="input-box">
+          <input type="username" id = "username" placeholder="Enter your name" required>
+        </div>
+        <div class="input-box">
+          <input type="email" id = "email" placeholder="Enter your email" required>
+        </div>
+        <div class="input-box message-box">
+          <textarea placeholder="Enter your message" required></textarea>
+        </div>
+        <div class="button">
+          <input type="Submit" value="Send Now" class="btn" onclick="auth()">
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+
+<script>
+  function auth() {
+    var email = document.getElementById("email").value;
+    if(email== ""){
+      alert("E-mail is empty!!!");
+      return false;
+    }
+    else{
+      alert("Thank You For Your Valuable Feedback!");
+      return;
+    }
+  }
+</script>
+</body>
+</html>
